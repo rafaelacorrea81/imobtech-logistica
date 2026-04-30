@@ -348,7 +348,7 @@
                         <p>Área: 5.000m² | Docas: 10</p>
                         <p>Local: Polo Industrial A</p>
                         <p class="preco">R$ 15.000 / mês</p>
-                        <button onclick="selecionarImovel('Armazém Central', 'Aluguer')">Simular Aluguel</button>
+                        <button onclick="selecionarImovel('Armazém Central', 'Alugar')">Simular Aluguel</button>
                     </div>
                 </div>
                 <!-- 2 -->
@@ -374,7 +374,7 @@
                         <p>Área: 12.000m² | Pé Direito: 12m</p>
                         <p>Local: Marginal Sul</p>
                         <p class="preco">R$ 38.000 / mês</p>
-                        <button onclick="selecionarImovel('CD Metropolitano', 'Aluguer')">Simular Aluguel</button>
+                        <button onclick="selecionarImovel('CD Metropolitano', 'Alugar')">Simular Aluguel</button>
                     </div>
                 </div>
                 <!-- 4 -->
@@ -400,7 +400,7 @@
                         <p>Área: 8.000m² | Piso: 6ton/m²</p>
                         <p>Local: Parque de Inovação</p>
                         <p class="preco">R$ 25.000 / mês</p>
-                        <button onclick="selecionarImovel('Galpão Tecnológico', 'Aluguer')">Simular Aluguel</button>
+                        <button onclick="selecionarImovel('Galpão Tecnológico', 'Alugar')">Simular Aluguel</button>
                     </div>
                 </div>
                 <!-- 6 -->
@@ -413,7 +413,7 @@
                         <p>Área: 3.500m² | Câmaras Frias</p>
                         <p>Local: Zona Portuária</p>
                         <p class="preco">R$ 45.000 / mês</p>
-                        <button onclick="selecionarImovel('Armazém Cold Chain', 'Aluguer')">Simular Aluguel</button>
+                        <button onclick="selecionarImovel('Armazém Cold Chain', 'Alugar')">Simular Aluguel</button>
                     </div>
                 </div>
                 <!-- 7 -->
@@ -426,7 +426,7 @@
                         <p>Área: 20.000m² | Acesso Ferroviário</p>
                         <p>Local: Porto Seco</p>
                         <p class="preco">R$ 80.000 / mês</p>
-                        <button onclick="selecionarImovel('Terminal Intermodal', 'Aluguer')">Simular Aluguel</button>
+                        <button onclick="selecionarImovel('Terminal Intermodal', 'Alugar')">Simular Aluguel</button>
                     </div>
                 </div>
                 <!-- 8 -->
@@ -445,19 +445,6 @@
                 <!-- 9 -->
                 <div class="cartao-imovel">
                     <div class="img-container">
-                        <img src="https://images.unsplash.com/photo-1580982348351-118f6f5920a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Silo de Armazenagem">
-                    </div>
-                    <div class="info-imovel">
-                        <h4>Silo de Armazenagem</h4>
-                        <p>Capacidade: 10.000 ton | Climatizado</p>
-                        <p>Local: Porto Industrial</p>
-                        <p class="preco">R$ 50.000 / mês</p>
-                        <button onclick="selecionarImovel('Silo de Armazenagem', 'Aluguel')">Simular Aluguel</button>
-                    </div>
-                </div>
-                <!-- 10 -->
-                <div class="cartao-imovel">
-                    <div class="img-container">
                         <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Galpão Lonado Flexível">
                     </div>
                     <div class="info-imovel">
@@ -465,7 +452,7 @@
                         <p>Área: 1.000m² | Estrutura rápida</p>
                         <p>Local: Área de Expansão</p>
                         <p class="preco">R$ 5.000 / mês</p>
-                        <button onclick="selecionarImovel('Galpão Lonado Flexível', 'Aluguer')">Simular Aluguel</button>
+                        <button onclick="selecionarImovel('Galpão Lonado Flexível', 'Alugar')">Simular Aluguel</button>
                     </div>
                 </div>
             </div>
@@ -484,11 +471,14 @@
                 
                 <label for="email">E-mail Corporativo:</label>
                 <input type="email" name="entry.1562410279" id="email" required placeholder="contato@empresa.com">
+
+                <label for="telefone">Telefone / WhatsApp:</label>
+                <input type="tel" name="entry.520961214" id="telefone" required placeholder="Ex: (27) 99999-9999">
                 
                 <label for="tipoNegocio">Tipo de Negócio:</label>
                 <select name="entry.1436523926" id="tipoNegocio">
                     <option value="Compra">Comprar Imóvel</option>
-                    <option value="Aluguer">Alugar Imóvel</option>
+                    <option value="Alugar">Alugar Imóvel</option>
                 </select>
 
                 <label for="imovelInteresse">Imóvel de Interesse:</label>
